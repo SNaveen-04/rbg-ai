@@ -4,7 +4,7 @@ import Layout from './Pages/Layout'
 import Home from './Pages/Home/Home'
 import ResearchPage from './Pages/Research/ResearchPage'
 import About from './Pages/About/About'
-
+import Policy from './Pages/Policy'
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
             <Route path='/home' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/research' element={<ResearchPage/>}/>
+            <Route path='/policy' element={<Policy/>}/>
             <Route path='/projects'>
                 <Route/>
                 <Route/>
