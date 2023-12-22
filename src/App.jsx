@@ -10,7 +10,7 @@ import Llm from './Pages/Workshops/LLM/Llm'
 import Workshop from './Pages/Workshops/Workshop'
 import Project from './Pages/projects/Project'
 import Corepool from './Pages/projects/CorePool/Corepool'
-
+import Floor from './Pages/projects/Floor/Floor'
 function App() {
   return (
     <React.Fragment>
@@ -24,6 +24,7 @@ function App() {
             <Route path='projects' element={<Project/>}>
                 <Route path='mfr' element={<Mfr/>}/>
                 <Route path='corepool' element={<Corepool/>}/>
+                <Route path='floor' element={<Floor/>}/>
                 {/* <Route/> */}
             </Route>
             <Route path='workshop' element={<Workshop/>}>

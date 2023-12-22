@@ -8,7 +8,7 @@ let projects =[
         icon:FaLinode,
         title:'Floor-Plan-Detection',
         Description:'floor plan object detection with super resolution',
-        link:'/projects/floor-plan'
+        link:'/projects/floor'
     },
     {
         icon:FaCogs,
