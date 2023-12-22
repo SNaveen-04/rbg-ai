@@ -4,6 +4,7 @@ import youtube from "../assests/images/social.png";
 import facebook from "../assests/images/facebook.png";
 import twitter from "../assests/images/twitter.png";
 import github from "../assests/images/github.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className=" h-auto bottom-0 bg-Green ">
@@ -62,7 +63,7 @@ const Footer = () => {
         <div className="text-white pt-20 pb-2">
           <p className="text-center text-sm md:text-xl">
             © 2021 - 2023 Resilience Business Grids LLP. All rights reserved |
-            <a className="hover:underline">Terms & Policies</a>
+            <Link to='/policy' className="hover:underline">Terms & Policies</Link>
           </p>
         </div>
       </div>
