@@ -14,8 +14,8 @@ export default {
         Green:'#76ad5f'
       },
       fontFamily:{
-        'Poppins':'Poppins',
-        'OpenSans':'Open Sans',
+        Poppins:'Poppins',
+        OpenSans:'Open Sans',
       }
     },
   plugins: [require('flowbite/plugin'),],

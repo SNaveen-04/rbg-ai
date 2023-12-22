@@ -10,26 +10,26 @@ const bootcamps = [
         Image:Llm,
         Venue: `SREC SPARK Incubation Foundation,Coimbatore`,
         Date: `8th to 12th, Jan 2024`,
-        link:'/Workshop/LLM'
+        link:'/workshop/llm'
     }
     ,
     {
         Image:EssentialAi,
         Venue: `SREC SPARK, Coimbatore`,
         Date: `30th to 3rd, Oct & Nov 2023`,
-        link:'/Workshop/EssentialAi'
+        link:'/workshop/essentialai'
     }
     ,{
         Image:MedicalAi,
         Venue: `SREC SPARK, Coimbatore`,
         Date: `3rd To 7th, Oct 2023`,
-        link:'/Workshop/MedicalAi'
+        link:'/workshop/medicalai'
     },
     {
       Image:Mldevops,
       Venue: `Amrita Campus, Coimbatore`,
       Date: `20 & 21, April 2022`,
-      link:'/Workshop/MedicalAi'
+      link:'/workshop/medicalai'
   },
 ]
 const Workshops = () => {

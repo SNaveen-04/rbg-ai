@@ -4,10 +4,14 @@ import Training from "./Training"
 import Resourcing from "./Resourcing"
 import Slider from "./Slider"
 import Clients from "./Clients"
+let Heading = {
+  title:"RBG Artificial Intelligence Research",
+  content:'Focused to span AI solutions across multiple domains to Structure the Unstructured data',
+}
 const Home = () => {
   return (
     <div className="font-Poppins">
-    <Header color='#6D9EEB'/>
+    <Header title={Heading.title} content={Heading.content}/>
     <Slider/>
     <Consulting/>
     <Resourcing/>
