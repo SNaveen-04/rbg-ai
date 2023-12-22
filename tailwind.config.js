@@ -2,11 +2,22 @@
 export default {
   content: [
     './index.html',
-    './src/**/*.{js,jsx,ts,tsx}'
+    './src/**/*.{js,jsx,ts,tsx}',
+    'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    extend: {
+      extend: {},
+      colors:{
+        Primary:'#6D9EEB',
+        Secondary:'#EFF0FF',
+        Green:'#76ad5f'
+      },
+      fontFamily:{
+        'Poppins':'Poppins',
+        'OpenSans':'Open Sans',
+      }
+    },
+  plugins: [require('flowbite/plugin'),],
+}}
 

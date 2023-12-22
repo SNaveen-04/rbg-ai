@@ -1,13 +1,13 @@
-import rbglogo from "../images/rbg1.png";
-import linkedin from "../images/linkedin.png";
-import youtube from "../images/social.png";
-import facebook from "../images/facebook.png";
-import twitter from "../images/twitter.png";
-import github from "../images/github.png";
+import rbglogo from "../assests/images/rbg1.png";
+import linkedin from "../assests/images/linkedin.png";
+import youtube from "../assests/images/social.png";
+import facebook from "../assests/images/facebook.png";
+import twitter from "../assests/images/twitter.png";
+import github from "../assests/images/github.png";
 const Footer = () => {
   return (
-    <div className=" h-auto bg-[#76ad5f] ">
-      <div className="bg-[#76ad5f] items-center justify-center px-8  md:px-44 ">
+    <div className=" h-auto bottom-0 bg-Green ">
+      <div className="bg-Green items-center justify-center px-8  md:px-44 ">
         <div className=" text-center text-3xl py-4 text-white">Contacts</div>
         <div className="px-2">
           <div className=" flex items-center justify-center md:justify-start">
