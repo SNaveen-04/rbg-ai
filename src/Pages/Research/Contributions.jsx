@@ -26,10 +26,10 @@ let projects =[
 
 const Contributions = () => {
   return (
-    <div className=" font-Sans text-center h-auto m-4 py-8 my-10 mx-8 2xl:mx-16 max-md:mx-4 p-2 bg-Secondary rounded-xl text-Primary shadow-sm  shadow-slate-400">
+    <div className="font-OpenSans text-center h-auto py-8 my-10 mx-8 xl:mx-20 max-md:mx-4 p-2 bg-Secondary rounded-xl text-Primary shadow-sm  shadow-slate-400">
         <h1 className="max-xl:text-3xl xl:text-4xl my-4">Research Contributions</h1>
         <h2 className="max-xl:text-2xl xl:text-3xl my-1">Structuring the Unstructured</h2>
-        <div className="flex justify-between xl:justify-center items-center flex-col md:flex-row">
+        <div className="flex justify-between xl:justify-center items-center flex-col gap-4 md:flex-row">
         {
             projects.map((project,index)=>{
                 return(

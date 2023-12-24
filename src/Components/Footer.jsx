@@ -1,21 +1,21 @@
 import rbglogo from "../assests/images/rbg1.png";
-import linkedin from "../assests/images/linkedin.png";
-import youtube from "../assests/images/social.png";
-import facebook from "../assests/images/facebook.png";
-import twitter from "../assests/images/twitter.png";
-import github from "../assests/images/github.png";
-import { Link } from "react-router-dom";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 const Footer = () => {
+  const location = useLocation()
+    const colour = location.pathname === '/' ? 'Green' : (location.pathname ==='/Home' ? 'Green' : 'Primary')
   return (
-    <div className=" h-auto bottom-0 bg-Green ">
-      <div className="bg-Green items-center justify-center px-8  md:px-44 ">
+    <div className={`max-h-80  bottom-0 bg-${colour} `}>
+      <div className={`bg-${colour} items-center justify-center px-8  md:px-44 `}>
         <div className=" text-center text-3xl py-4 text-white">Contacts</div>
         <div className="px-2">
-          <div className=" flex items-center justify-center md:justify-start">
-            <img className="p-2" src={rbglogo} alt="" />
-          </div>
-          <div className="lg:flex lg:space-x-80">
-            <span className="text-white text-[15px] text-center md:text-left md:text-xl">
+          <div className="flex max-lg:flex-col items-center justify-evenly">
+            <div className="text-white max-md:text-lg md:text-xl text-center md:text-left justify-center items-center">
+              <img className="p-2 max-md:mx-auto" src={rbglogo} alt="" />
               <p>RBG.AI,</p>
               <p>SREC SPARK Incubation Foundation,</p>
               <p>Sri Ramakrishna Engineering College,</p>
@@ -30,33 +30,13 @@ const Footer = () => {
                 </a>
               </p>
               <p className="text-[20px] py-1">+91 733 901 3001</p>
-            </span>
-            <div className=" flex space-x-8 justify-center py-4 cursor-pointer lg:mt-24 ">
-              <img
-                src={linkedin}
-                alt="linekedin"
-                className=" h-6 w-6 md:h-8 md:w-8 "
-              />
-              <img
-                src={youtube}
-                alt="youtube"
-                className=" h-6 w-6 md:h-8 md:w-8  "
-              />
-              <img
-                src={facebook}
-                alt="facebook"
-                className=" h-6 w-6 md:h-8 md:w-8"
-              />
-              <img
-                src={twitter}
-                alt="twitter"
-                className=" h-6 w-6 md:h-8 md:w-8"
-              />
-              <img
-                src={github}
-                alt="github"
-                className=" h-6 w-6 md:h-8 md:w-8"
-              />
+            </div>
+            <div className=" flex mt-2 text-white justify-center cursor-pointer lg:mt-24 ">
+              <FaLinkedin className="m-3 max-md:text-3xl md:text-4xl" />
+              <FaYoutube className="m-3 max-md:text-3xl md:text-4xl" />
+              <FaFacebook className="m-3 max-md:text-3xl md:text-4xl" />
+              <FaTwitter className="m-3 max-md:text-3xl md:text-4xl" />
+              <FaGithub className="m-3 max-md:text-3xl md:text-4xl" />
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Training = [
 
 const AiTraining = () => {
   return (
-    <div className=" font-Sans text-center h-auto m-4 py-8 my-10 mx-8 2xl:mx-16 max-md:mx-4 p-2 bg-Primary rounded-xl text-Secondary shadow-sm  shadow-slate-400">
+    <div className=" font-Sans text-center h-auto m-4 py-8 my-10 mx-8 xl:mx-20 2xl:mx-16 max-md:mx-4 p-2 bg-Primary rounded-xl text-Secondary shadow-sm  shadow-slate-400">
       <div className="text-center m-2">
         <h1 className="max-xl:text-3xl xl:text-4xl my-4">AI-Training</h1>
         <h2 className="max-xl:text-2xl xl:text-3xl my-1">Making AI for Everyone Possible</h2>
