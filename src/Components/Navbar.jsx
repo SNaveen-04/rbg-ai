@@ -24,7 +24,7 @@ const Navbar = () => {
     </nav>
         </div>
     </nav>
-    <nav className={`md:hidden bg-${colour} w-full flex flex-col absolute text-white border-0 border-b border-solid border-white`+ (showMenu ? ' ' : ' -top-52')}>
+    <nav className={`md:hidden ${colour} w-full flex flex-col absolute text-white border-0  border-b border-solid border-white`+ (showMenu ? ' ' : ' -top-52')}>
             <Link className="px-4 py-2" to='/home'>Home</Link>
             <Link className="px-4 py-2" to='/research'>Research</Link>
             <Link className="px-4 py-2" to='/about'>About</Link>
