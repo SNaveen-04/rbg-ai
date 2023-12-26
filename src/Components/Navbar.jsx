@@ -10,10 +10,10 @@ const Navbar = () => {
     const paths = location.pathname.split('/');
     let currentpath = paths[1]
     currentpath = currentpath.toLowerCase();
-    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `[#76ad5f]` :(currentpath === 'workshop' || currentpath === 'about' ? 'red-400' : 'Primary');
+    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-red-400' : 'bg-Primary');
   return (
     <div className="top-0 sticky">
-    <nav className={`bg-${colour} md:mb-0 flex flex-col text-white`}>
+    <nav className={`${colour} md:mb-0 flex flex-col text-white`}>
         <div className="flex justify-between items-center py-2 px-6 border-0 border-b border-solid border-white">
             <Link to='/'>RBG AI Research</Link>
             <button onClick={handleClick} className="border border-solid border-white p-1 rounded-sm hover:bg-slate-50 hover:text-[#76ad5f] md:hidden">Menu</button>

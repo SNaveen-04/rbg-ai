@@ -11,10 +11,10 @@ const Footer = () => {
     console.log(paths)
     let currentpath = paths[1]
     currentpath = currentpath.toLowerCase();
-    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `[#76ad5f]` :(currentpath === 'workshop' || currentpath === 'about' ? 'red-400' : 'Primary');
+    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-red-400' : 'bg-Primary');
   return (
-    <div className={`max-h-80  bottom-0 bg-${colour} `}>
-      <div className={`bg-${colour} items-center justify-center px-8  md:px-44 `}>
+    <div className={`max-h-80  bottom-0 ${colour} `}>
+      <div className={`${colour} items-center justify-center px-8  md:px-44 `}>
         <div className=" text-center text-3xl py-4 text-white">Contacts</div>
         <div className="px-2">
           <div className="flex max-lg:flex-col items-center justify-evenly">
