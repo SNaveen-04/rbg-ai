@@ -16,7 +16,7 @@ const Footer = () => {
       <div className={`${colour} items-center justify-center px-8  md:px-44 `}>
         <div className=" text-center text-3xl py-4 text-white">Contacts</div>
         <div className="px-2">
-          <div className="flex max-lg:flex-col items-center justify-evenly">
+          <div className="flex max-lg:flex-col gap-4 items-center justify-evenly">
             <div className="text-white max-md:text-lg md:text-xl text-center md:text-left justify-center items-center">
               <img className="p-2 max-md:mx-auto" src={rbglogo} alt="" />
               <p>RBG.AI,</p>
@@ -24,7 +24,6 @@ const Footer = () => {
               <p>Sri Ramakrishna Engineering College,</p>
               <p>Coimbatore, Tamil Nadu 641022, India</p>
               <p className="py-2">
-                If you have queries about our work, contact us at <br />
                 <a
                   href="mailto: research@rbg.ai"
                   className="hover:text-black hover:underline duration-500"
@@ -35,11 +34,21 @@ const Footer = () => {
               <p className="text-[20px] py-1">+91 733 901 3001</p>
             </div>
             <div className=" flex mt-2 text-white justify-center cursor-pointer lg:mt-24 ">
-              <FaLinkedin className="m-3 max-md:text-3xl md:text-4xl" />
-              <FaYoutube className="m-3 max-md:text-3xl md:text-4xl" />
-              <FaFacebook className="m-3 max-md:text-3xl md:text-4xl" />
-              <FaTwitter className="m-3 max-md:text-3xl md:text-4xl" />
-              <FaGithub className="m-3 max-md:text-3xl md:text-4xl" />
+              <a href="https://in.linkedin.com/company/rbgai" rel="noreferrer" target="_blank">
+                <FaLinkedin className="m-3 max-md:text-3xl md:text-4xl" />
+              </a>
+              <a href="https://www.youtube.com/c/RBGAI" rel="noreferrer" target="_blank" >
+                <FaYoutube className="m-3 max-md:text-3xl md:text-4xl" />
+              </a>
+              <a href='https://m.facebook.com/p/RBGAI-100070859903620/?locale=en' rel="noreferrer" target="_blank" >
+                <FaFacebook className="m-3 max-md:text-3xl md:text-4xl" />
+              </a>
+              <a href="https://twitter.com/rbg_ai" rel="noreferrer" target="_blank">
+                <FaTwitter className="m-3 max-md:text-3xl md:text-4xl" />
+              </a>
+              <a href="https://github.com/rbg-research" rel="noreferrer" target="_blank">
+                <FaGithub className="m-3 max-md:text-3xl md:text-4xl" />
+              </a>
             </div>
           </div>
         </div>
