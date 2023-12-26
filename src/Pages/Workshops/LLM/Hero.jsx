@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <div className="min-h-[50vh] flex-col bg-Secondary w-full max-w-full flex items-center  ">
-      <div className="bg-Primary p-10 w-full rounded shadow">
+      <div className="bg-red-400 p-10 w-full rounded shadow">
         <h1 className="font-Poppins font-bold text-5xl mb-10 text-zinc-800">
           LLM Unleashed: Igniting Careers, Transforming Business
         </h1>
@@ -12,7 +12,7 @@ export default function Hero() {
         </p>
       </div>
 
-      <span className="font-Poppins font-bold text-3xl text-Primary mt-20">
+      <span className="font-Poppins font-bold text-3xl text-red-bg-red-400 mt-20">
         Dates & Venue
       </span>
       <p className="text-md flex flex-col mb-5 text-center font-medium text-zinc-700">

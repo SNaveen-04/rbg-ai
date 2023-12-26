@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Expertise() {
   return (
     <div className="w-full flex flex-col justify-center items-center min-h-[50vh]">
@@ -13,7 +11,7 @@ export default function Expertise() {
           Beyond Tables and Vectors: Knowledge Graphs for Al Reasoning?
         </span>
         <span>How to Build an Intelligent QA Chatbot with LLMs?</span>
-        <span>How to make your RAG mode production ready?</span>
+        <span>How to make your RAG mode production ready?</span>
       </div>
     </div>
   );

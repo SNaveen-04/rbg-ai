@@ -23,7 +23,7 @@ export default function Registration() {
             training@rbg.ai
           </span>
         </p>
-        <button className="mx-auto mt-5 bg-Primary px-4 py-2 text-gray-100 rounded">
+        <button className="mx-auto mt-5 bg-red-400 px-4 py-2 text-gray-100 rounded">
           Register
         </button>
       </div>

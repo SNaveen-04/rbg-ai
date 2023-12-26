@@ -17,9 +17,9 @@ export default function Course() {
         {knowledgeData.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col  p-5 shadow bg-Primary rounded"
+            className="flex flex-col  p-5 shadow bg-red-400 rounded"
           >
-            <h1 text-Secondary className="text-xl  font-semibold text-zinc-800">
+            <h1 className="text-xl  font-semibold text-zinc-800">
               {item.title}
             </h1>
             <ul className="flex justify-center flex-col  font-semibold mt-5 text-gray-700">
