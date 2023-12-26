@@ -30,8 +30,8 @@ const mentors = [
 
 const Mentors = () => {
   return (
-    <div className='m-4 p-4'>Mentors
-    <div className='flex items-center justify-around'>
+    <div className='m-4 p-4 text-center text-red-400 text-2xl'>Mentors
+    <div className='flex items-center flex-wrap justify-around'>
         {mentors.map((mentor,index)=>{
             return(
                 <Card key={index} name={mentor.name} role={mentor.role} img={mentor.img}/>

@@ -2,7 +2,7 @@ import Conclusion from "./Conclusion"
 import Introduction from "./Introduction"
 import Mentors from "./Mentors"
 
-const MedicalAi = () => {
+const MlDevOps = () => {
   return (
     <div>
     <Introduction/>
@@ -12,4 +12,4 @@ const MedicalAi = () => {
   )
 }
 
-export default MedicalAi
+export default MlDevOps
