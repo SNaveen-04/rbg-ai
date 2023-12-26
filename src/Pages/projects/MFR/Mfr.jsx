@@ -3,7 +3,7 @@ import Section2 from "./Section2"
 import Section3 from "./Section3"
 import Usecase from "./Usecase"
 import Video from "./Video"
-import Header from "../../../Components/Header"
+import Header1 from "../Header1"
 
 
 let Heading = {
@@ -14,7 +14,7 @@ let Heading = {
 const Mfr = () => {
   return (
     <div>
-        <Header title={Heading.title} content={Heading.content}/>
+        <Header1 title={Heading.title} content={Heading.content}/>
         <Section1/>
         <Section2/>
         <Section3/>

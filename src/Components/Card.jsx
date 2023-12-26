@@ -1,8 +1,8 @@
 import Proptypes from 'prop-types'
 const Card = ({ name, role, img }) => {
   return (
-    <div className=" max-w-40 bg-gray-200 border-black p-5 md:p-2  rounded-xl shadow-lg flex flex-col items-center  hover:scale-105 hover:shadow-slate-400  duration-700">
-      <img src={img} alt="" className=" h-28  md:h-28 rounded-full mx-auto object-scale-down " />
+    <div className=" max-w-40 bg-white p-5 md:p-2  rounded-xl flex flex-col items-center  hover:scale-105 hover:shadow-slate-200  duration-200 ">
+      <img src={img} alt="" className=" h-28 object-contain  rounded-full mx-auto max-h-32 " />
       <p className=" text-lg  md:text-lg font-semibold text-center text-black">
         {name}
       </p>

@@ -6,7 +6,7 @@ const Comtwo = () => {
     <div>
         <div className="text-left mx-auto px-3 md:mx-36 text-Primary md:px-12 md:py-28">
         <div className='flex justify-center p-4'>
-            <img src={Floor} alt="floor" className='h-96' />
+            <img src={Floor} alt="floor" className=' h-48 object-scale-down md:h-96' />
         </div>
         <h1 className=" text-2xl md:text-3xl">
         Floor-Plan-Detection dataset

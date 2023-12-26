@@ -9,7 +9,7 @@ const Section1 = () => {
             <p className="max-md:text-sm md:text-lg ">
             Re-usability of the manufactured product has been a sustainable practice followed in many industries to save resources. It may be difficult to identify that product manually by going through each part of the product to identify which one can be reused. Machine feature is a process of identifying the semantically higher level of geometrical elements such as a hole, passage, slots, etc., from an image or a 3D model of the machine parts.
             </p>
-            <a href='https://arxiv.org/abs/2108.11838v1' className="border border-gray-500 px-2 rounded-lg bg-white text-gray-800">READ THE PAPER ( KAMAL ET AL.)</a>
+            <a href='https://arxiv.org/abs/2108.11838v1' className=" text-black text-[17px] w-auto border border-slate-400 p-3 tracking-widest rounded-3xl hover:bg-slate-200 duration-150 outline-none uppercase" target="blank" >READ THE PAPER ( KAMAL ET AL.)</a>
         </div>
         <img src='https://i.ibb.co/DpQkYRq/123.png' className="p-4 text-sm max-md:h-40 max-md:w-40 md:w-1/2"/>
     </section>

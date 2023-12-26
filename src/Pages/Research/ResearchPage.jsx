@@ -1,6 +1,7 @@
 import Header from "../../Components/Header"
 import AiTraining from "./AiTraining"
 import Contributions from "./Contributions"
+import Member from "./Member"
 import Workshops from "./Workshops"
 
 let Heading = {
@@ -14,6 +15,7 @@ const ResearchPage = () => {
         <Contributions/>
         <AiTraining/>
         <Workshops/>
+        <Member/>
     </div>
   )
 }

@@ -18,7 +18,7 @@ Project.propTypes = {
   title: PropTypes.string.isRequired,
   Description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  icon: PropTypes.node,
+  icon: PropTypes.icon,
 };
 
 export default Project
