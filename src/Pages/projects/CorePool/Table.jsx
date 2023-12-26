@@ -25,71 +25,113 @@ const Table = () => {
         </p>
       </div>
       <div>
-        <div className=" p-2  text-white ">
-          <h1 className="p-4 text-xl text-center border-b border-blue-gray-100 bg-blue-gray-50">Table 1. CoRe-PooL Statistics</h1>
-          <thead className="text-left my-3 p-4">
+        <div className=" p-2 overflow-x-auto text-white ">
+          <div className="flex flex-col items-center text-xs md:text-sm">
+          <h1 className="p-4 text-xl text-center border-b border-blue-gray-100 bg-blue-gray-50 w-full">
+            Table 1. CoRe-PooL Statistics
+          </h1>
+          <thead className="text-center my-3 py-3 items-baseline">
             <tr>
-              <th className="px-14 "></th>
-              <th className="text-center py-3 p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+              <th></th>
+              <th className="text-center py-3 border-b border-blue-gray-100 bg-blue-gray-50 ">
                 Number of transcript
               </th>
-              <th className="px-8 border-b border-blue-gray-100 bg-blue-gray-5 "></th>
-              <th className="text-center py-3 p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+              <th className="text-center py-3 p-4 border-b border-blue-gray-100 bg-blue-gray-50 pl-52">
                 Duration(seconds)
               </th>
             </tr>
           </thead>
-          <table className=" table-auto text-left">
-            <thead>
-              <tr>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Title
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Male
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Female
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Total
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Male
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Female
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Total
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Unique Words
-                </th>
-                <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                  Total Words
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((row, index) => (
-                <tr key={index}>
-                  {row.map((cell, i) => (
-                    <td
-                      key={i}
-                      className={`p-4 ${
-                        index === data.length - 1
-                          ? ""
-                          : "border-b border-blue-gray-50"
-                      }`}
-                    >
-                      {cell}
-                    </td>
-                  ))}
+            <table className=" table-cell text-left">
+              <thead>
+                <tr>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Title
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Male
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Female
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Total
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Male
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Female
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Total
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Unique Words
+                  </th>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                    Total Words
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {data.map((row, index) => (
+                  <tr key={index}>
+                    {row.map((cell, i) => (
+                      <td
+                        key={i}
+                        className={`p-4 ${
+                          index === data.length - 1
+                            ? ""
+                            : "border-b border-blue-gray-50"
+                        }`}
+                      >
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <div className="py-4">
+            <h1 className="p-4 text-xl text-center border-b border-blue-gray-100 bg-blue-gray-50 w-full">
+            Table 2. Core-pool Variation
+          </h1>
+            <table className="table-auto">
+              <thead>
+                <tr>
+                <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4 ">
+                Variation
+                  </td>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-44">
+                  </th>
+                  <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                  Total Audio Length(Minutes)
+                  </td>
+                </tr>
+                <tr>
+                <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4 ">
+                Annotated
+                  </td>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-44">
+                  </th>
+                  <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                  420
+                  </td>
+                </tr>
+                <tr>
+                <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4 ">
+                Unannotated
+                  </td>
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-44">
+                  </th>
+                  <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                  968
+                  </td>
+                </tr>
+              </thead>
+            </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>

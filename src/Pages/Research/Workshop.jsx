@@ -7,7 +7,7 @@ const Workshop = ({Image,link}) => {
                 <figure className="w-full my-1 h-[70%] flex justify-center items-center">
                     <img src={Image} className="h-full"/>
                 </figure>
-                <Link to={link} className=" border border-white border-solid p-1 my-1 rounded-xl hover:bg-white hover:text-Primary shadow-slate-200 hover:shadow-xl hover:border-Primary">
+                <Link to={link} className=" border border-white border-solid py-1 px-3 my-1 rounded-2xl hover:bg-white hover:text-Primary shadow-slate-200 hover:shadow-xl transition-colors duration-500 hover:border-Primary">
                   KNOW MORE
                 </Link>
                 

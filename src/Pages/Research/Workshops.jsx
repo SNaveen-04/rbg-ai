@@ -35,7 +35,7 @@ const bootcamps = [
 const Workshops = () => {
   return (
     <div>
-    <h1 className=" text-Primary px-4 text-center max-md:text-xl  md:text-3xl 2xl:text-5xl">WORKSHOPS AND BOOTCAMPS</h1>
+    <h1 className=" text-Primary px-4 text-center max-md:text-xl font-semibold md:text-4xl 2xl:text-5xl">WORKSHOPS AND BOOTCAMPS</h1>
     <div className="bg-Primary h-[50%] md:h-[60%] lg:h-[70%] mx-8 my-10 font-OpenSans rounded-md text-white">
         <Carousel leftControl="" rightControl="" slide={false} indicators={true}>
             {bootcamps.map((bootcamp,index)=>{

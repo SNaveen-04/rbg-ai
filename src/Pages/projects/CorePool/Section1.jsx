@@ -7,8 +7,8 @@ const values = [
 const Section1 = () => {
     return (
       <section className="max-md:p-2 max-md:py-2 md:p-8 max-w-screen rounded-lg text-Primary max-md:flex-col bg-white flex md:flex-row justify-between md:px-10 items-center">
-            <img src="https://i.ibb.co/Q61xyGd/core2.png" className="p-4 text-sm max-md:h-40 md:w-1/2 max-md:w-40"/>
-            <div className="max-md:p-2  md:p-4 tracking-wide w-1/2 flex flex-col gap-2 items-center justify-center max-md:text-sm max-w-2/3 md:text-xl">
+            <img src="https://i.ibb.co/Q61xyGd/core2.png" className="p-4 text-sm max-md:h-40 md:w-1/3 max-md:w-40"/>
+            <div className="max-md:p-2  md:p-4 tracking-wide w-2/3 flex flex-col gap-2 items-center justify-center max-md:text-sm max-w-2/3 md:text-xl">
                 <h2 className="max-md:text-xl text-center md:text-4xl">
                     The contributions of this paper
                 </h2>
