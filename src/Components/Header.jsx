@@ -2,7 +2,9 @@ import PropTypes from 'prop-types'
 import { useLocation } from 'react-router-dom'
 const Header = ({title,content}) => {
   const location = useLocation()
-  const colour = location.pathname === '/' || location.pathname === '/Home' ? '[#76ad5f]' : 'Primary';
+    const paths = location.pathname.split('/');
+    const currentpath = paths[1]
+    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? '[#76ad5f]' :(currentpath === 'workshop' || currentpath === 'about' ? 'red-400' : 'Primary');
   return (
     <header className={` mb-2 font-OpenSans bg-${colour} max-w-screen h-[50%] flex flex-col items-center justify-center text-white p-6 text-center tracking-wide`}>
         <h1 className=" m-2 xl:my-6 text-3xl lg:text-5xl xl:text-6xl 2xl:text-9xl">{title}</h1>

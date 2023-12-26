@@ -22,7 +22,7 @@ const AiTraining = () => {
         <div className="flex flex-col p-6 justify-between items-center">
           <FaRobot className="max-md:text-6xl text-9xl"/>
           <h2 className="text-4xl">AI-Training</h2>
-          <button className="border border-white hover:bg-Secondary hover:border-black hover:text-Primary  m-2 p-1 rounded-xl">KNOW MORE</button>
+          <a href="https://github.com/rbg-research/AI-Training" className="border border-white hover:bg-Secondary hover:border-black hover:text-Primary  m-2 p-1 rounded-xl">KNOW MORE</a>
 
         </div>
       </div>

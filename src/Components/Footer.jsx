@@ -7,7 +7,9 @@ import { FaGithub } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 const Footer = () => {
   const location = useLocation()
-  const colour = location.pathname === '/' || location.pathname === '/Home' ? '[#76ad5f]' : 'Primary';
+    const paths = location.pathname.split('/');
+    const currentpath = paths[1]
+    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? '[#76ad5f]' :(currentpath === 'workshop' || currentpath === 'about' ? 'red-400' : 'Primary');
   return (
     <div className={`max-h-80  bottom-0 bg-${colour} `}>
       <div className={`bg-${colour} items-center justify-center px-8  md:px-44 `}>

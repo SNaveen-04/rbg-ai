@@ -17,7 +17,7 @@ const bootcamps = [
         Image:EssentialAi,
         Venue: `SREC SPARK, Coimbatore`,
         Date: `30th to 3rd, Oct & Nov 2023`,
-        link:'/workshop/essentialai'
+        link:'/workshop/aiessentials'
     }
     ,{
         Image:MedicalAi,
