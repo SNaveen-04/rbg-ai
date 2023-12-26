@@ -77,7 +77,7 @@ const Results = () => {
   ];
   return (
     <div className=" bg-Primary">
-      <div className="text-left mx-auto px-3 md:mx-36 text-white md:px-12 md:py-28">
+      <div className="text-left mx-auto px-3  text-white md:px-12 md:py-28">
         <h1 className="text-2xl md:text-3xl">Results</h1>
         <p className="py-3">
           The multi-component module performed room detection with higher
@@ -90,52 +90,66 @@ const Results = () => {
           overall performance of the network and push it to a wider range of use
           cases.
         </p>
-        <div className="flex flex-col lg:flex-row max-md:text-xs overflow-x-auto md:text-lg gap-4 md:justify-between py-4">
+        <div className="flex flex-col lg:flex-row max-md:text-xs overflow-x-auto md:text-lg gap-4 md:space-x-9  py-4">
         <div>
-            <h1 className="py-2 border-b-2 border-white">Table 1. Room detection comparison of SR method with original.</h1>
-          <table border="1" className="gap-3 py-4">
-            <thead>
-              <tr>
-                <th></th>
+        <div>
+            <h1 className="py-2 border-b-2 border-white">
+              Table 1. Room detection comparison of SR method with original.
+            </h1>
+            <div className=" w-full">
+              <div className="grid grid-cols-6 border-b-2 border-white">
+                <div></div>
                 {Object.keys(data).map((rowName, rowIndex) => (
-                  <th className="border-b-2 space-x-6 border-white" key={rowIndex}>{rowName}</th>
+                  <div className="p-1" key={rowIndex}>
+                    {rowName}
+                  </div>
                 ))}
-              </tr>
-            </thead>
-            <tbody>
-              {columns.map((colName, colIndex) => (
-                <tr className="border-b-2 border-white" key={colIndex}>
-                  <td>{colName}</td>
-                  {Object.keys(data).map((rowName, rowIndex) => (
-                    <td className="border-b-2  border-white" key={rowIndex}>{data[rowName][colIndex]}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+              </div>
+              <div className=" border-b-2 border-white">
+                {columns.map((colName, colIndex) => (
+                  <div className="grid grid-cols-6" key={colIndex}>
+                    <div className="p-1">{colName}</div>
+                    {Object.keys(data).map((rowName, rowIndex) => (
+                      <div className="p-1" key={rowIndex}>
+                        {data[rowName][colIndex]}
+                        {console.log(rowName, colIndex)}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
         <div>
-        <h1 className="py-3 border-b-2 border-white">Table 2. Icon detection comparison of SR mothods with original.</h1>
-          <table border="1" className="gap-3">
-            <thead>
-              <tr>
-                <th></th>
-                {Object.keys(data).map((rowName, rowIndex) => (
-                  <th className="border-b-2 border-white" key={rowIndex}>{rowName}</th>
+        <div>
+            <h1 className="py-2 border-b-2 border-white">
+            Table 2. Icon detection comparison of SR mothods with original.
+            </h1>
+            <div className=" w-full">
+              <div className="grid grid-cols-6 border-b-2 border-white">
+                <div></div>
+                {Object.keys(data1).map((rowName, rowIndex) => (
+                  <div className="p-1" key={rowIndex}>
+                    {rowName}
+                  </div>
                 ))}
-              </tr>
-            </thead>
-            <tbody>
-              {columns1.map((colName, colIndex) => (
-                <tr className="border-b-2 border-white" key={colIndex}>
-                  <td>{colName}</td>
-                  {Object.keys(data1).map((rowName, rowIndex) => (
-                    <td className="border-b-2 border-white" key={rowIndex}>{data1[rowName][colIndex]}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+              </div>
+              <div className=" border-b-2 border-white">
+                {columns1.map((colName, colIndex) => (
+                  <div className="grid grid-cols-6" key={colIndex}>
+                    <div className="p-1">{colName}</div>
+                    {Object.keys(data1).map((rowName, rowIndex) => (
+                      <div className="p-1" key={rowIndex}>
+                        {data[rowName][colIndex]}
+                        {console.log(rowName, colIndex)}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Floor from '../../../assests/Projects/floor4.jpg'
 const Comtwo = () => {
   return (
     <div>
-        <div className="text-left mx-auto px-3 md:mx-36 text-Primary md:px-12 md:py-28">
+        <div className="text-left mx-auto px-3  text-Primary md:px-12 md:py-28">
         <div className='flex justify-center p-4'>
             <img src={Floor} alt="floor" className=' h-48 object-scale-down md:h-96' />
         </div>

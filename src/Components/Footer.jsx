@@ -36,7 +36,7 @@ const Footer = () => {
               <p className="text-[20px] py-1">+91 733 901 3001</p>
             </div>
             <div className=" flex mt-2 text-white justify-center cursor-pointer lg:mt-24 ">
-              <FaLinkedin className="m-3 max-md:text-3xl md:text-4xl" />
+              <FaLinkedin className="m-3 max-md:text-3xl md:text-4xl " href/>
               <FaYoutube className="m-3 max-md:text-3xl md:text-4xl" />
               <FaFacebook className="m-3 max-md:text-3xl md:text-4xl" />
               <FaTwitter className="m-3 max-md:text-3xl md:text-4xl" />

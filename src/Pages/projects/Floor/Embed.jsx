@@ -3,7 +3,7 @@ import React from "react";
 const Embed = () => {
   return (
     <div>
-      <div className=" mx-auto flex flex-col lg:flex-row px-3 py-10 items-center text-Primary md:px-48 md:py-28 gap-5">
+      <div className=" mx-auto flex flex-col lg:flex-row px-3 py-10 items-center text-Primary md:px-36 md:py-28 gap-5">
         <div>
           <iframe
           className=" md:h-[250px] md:w-[450px] "

@@ -3,7 +3,7 @@ import React from 'react'
 const Comthree = () => {
   return (
     <div className='bg-slate-100' >
-         <div className="text-left mx-auto px-3 md:mx-36 text-Primary md:px-12 md:py-28">
+         <div className="text-left mx-auto px-3  text-Primary md:px-12 md:py-28">
         <h1 className="text-2xl md:text-3xl">
         Our Floor-Plan-Detection uses multi-component module that can perform image enhancement and object detection.
         </h1>

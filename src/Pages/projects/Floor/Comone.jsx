@@ -3,7 +3,7 @@ import React from "react";
 const Comone = () => {
   return (
     <div className="bg-slate-100">
-      <div className="text-left mx-auto px-3 md:mx-36 text-Primary md:px-12 md:py-28">
+      <div className="text-left mx-auto px-3  text-Primary md:px-12 md:py-28">
         <h1 className="text-2xl md:text-3xl">
           We developed a deep learning model for Building Information Modeling
           (BIM) software using scalable vector formats to enable flexible
