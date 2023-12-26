@@ -7,7 +7,7 @@ const Navbar = () => {
         setShowMenu(!showMenu);
     }
     const location = useLocation()
-    const colour = location.pathname === '/' ? 'Green' : (location.pathname ==='/Home' ? 'Green' : 'Primary')
+    const colour = location.pathname === '/' || location.pathname === '/Home' ? '[#76ad5f]' : 'Primary';
   return (
     <div className="top-0 sticky">
     <nav className={`bg-${colour} md:mb-0 flex flex-col text-white`}>

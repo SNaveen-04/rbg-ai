@@ -1,8 +1,8 @@
-import Proptypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { useLocation } from 'react-router-dom'
 const Header = ({title,content}) => {
   const location = useLocation()
-  const colour = location.pathname === '/' ? 'Green' : (location.pathname ==='/Home' ? 'Green' : 'Primary')
+  const colour = location.pathname === '/' || location.pathname === '/Home' ? '[#76ad5f]' : 'Primary';
   return (
     <header className={` mb-2 font-OpenSans bg-${colour} max-w-screen h-[50%] flex flex-col items-center justify-center text-white p-6 text-center tracking-wide`}>
         <h1 className=" m-2 xl:my-6 text-3xl lg:text-5xl xl:text-6xl 2xl:text-9xl">{title}</h1>
@@ -11,7 +11,7 @@ const Header = ({title,content}) => {
   )
 }
 Header.propTypes = {
-  title:Proptypes.string.isRequired,
-  content:Proptypes.string.isRequired
+  title:PropTypes.string.isRequired,
+  content:PropTypes.string.isRequired
 }
 export default Header

@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 const Footer = () => {
   const location = useLocation()
-    const colour = location.pathname === '/' ? 'Green' : (location.pathname ==='/Home' ? 'Green' : 'Primary')
+  const colour = location.pathname === '/' || location.pathname === '/Home' ? '[#76ad5f]' : 'Primary';
   return (
     <div className={`max-h-80  bottom-0 bg-${colour} `}>
       <div className={`bg-${colour} items-center justify-center px-8  md:px-44 `}>
