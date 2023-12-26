@@ -15,6 +15,7 @@ const Practitioner = () => {
               role={par.role}
               img={par.img}
               key={par.name}
+              color={"red-400"}
             />
           );
         })}

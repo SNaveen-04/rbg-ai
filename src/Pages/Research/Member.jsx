@@ -16,6 +16,7 @@ const Member = () => {
               role={mem.role}
               img={mem.img}
               key={mem.name}
+              color={"Primary"}
             />
           );
         })}
