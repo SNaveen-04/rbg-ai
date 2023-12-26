@@ -21,9 +21,11 @@ const Comone = () => {
           high-resolution ones. This work focuses on creating a multi-component
           module that stacks an SR model on a floor plan object detection model.
         </p>
-        <button className=" text-black text-[17px] w-auto border border-slate-400 p-3 tracking-widest rounded-3xl hover:bg-slate-200 duration-150 outline-none uppercase">
+        <div className="p-3 flex items-start">
+        <a className=" text-black text-xs md:text-[17px] w-auto border border-slate-300 p-3 tracking-widest rounded-3xl hover:bg-slate-200 duration-150 outline-none uppercase" href="https://arxiv.org/abs/2112.09844v1" target="blank">
           read the paper (dev khare et al.)
-        </button>
+        </a>
+        </div>
       </div>
     </div>
   );
