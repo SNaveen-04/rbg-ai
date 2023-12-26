@@ -12,8 +12,8 @@ import Project from './Pages/projects/Project'
 import Corepool from './Pages/projects/CorePool/Corepool'
 import Floor from './Pages/projects/Floor/Floor'
 import AiEssentials from './Pages/Workshops/AIEssentials/AiEssentials'
-import MedicalAi from './Pages/Workshops/MedicalAi.jsx/MedicalAi'
 import ScrollToTop from './ScrollToTop'
+import MedicalAiPage from './Pages/Workshops/MedicalAi.jsx/MedicalAiPage'
 function App() {
   return (
     <React.Fragment>
@@ -34,7 +34,7 @@ function App() {
             <Route path='workshop' element={<Workshop/>}>
                 <Route path='llm' element={<Llm/>}/>
                 <Route path='aiessentials' element={<AiEssentials/>}/>
-                <Route path='medicalai' element={<MedicalAi/>}/>
+                <Route path='medicalai' element={<MedicalAiPage/>}/>
             </Route>
             <Route path='/:id' element={<Home/>}/>
           </Route>

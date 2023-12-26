@@ -78,7 +78,7 @@ const CourseOverview = () => {
               <ul className=" text-xl max-md:text-base">
                 {Topics.topics.map((topic,key)=>{
                   return (
-                    <li key={key}>{topic}</li>
+                    <li  className="text-gray-500" key={key}>{topic}</li>
                   )
                 })}
               </ul>

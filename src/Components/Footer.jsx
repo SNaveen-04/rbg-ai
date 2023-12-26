@@ -8,7 +8,6 @@ import { Link, useLocation } from "react-router-dom";
 const Footer = () => {
   const location = useLocation()
     const paths = location.pathname.split('/');
-    console.log(paths)
     let currentpath = paths[1]
     currentpath = currentpath.toLowerCase();
     const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-red-400' : 'bg-Primary');
