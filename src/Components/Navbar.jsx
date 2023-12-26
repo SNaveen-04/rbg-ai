@@ -8,8 +8,9 @@ const Navbar = () => {
     }
     const location = useLocation()
     const paths = location.pathname.split('/');
-    const currentpath = paths[1]
-    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? '[#76ad5f]' :(currentpath === 'workshop' || currentpath === 'about' ? 'red-400' : 'Primary');
+    let currentpath = paths[1]
+    currentpath = currentpath.toLowerCase();
+    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `[#76ad5f]` :(currentpath === 'workshop' || currentpath === 'about' ? 'red-400' : 'Primary');
   return (
     <div className="top-0 sticky">
     <nav className={`bg-${colour} md:mb-0 flex flex-col text-white`}>
@@ -24,9 +25,9 @@ const Navbar = () => {
         </div>
     </nav>
     <nav className={`md:hidden bg-${colour} w-full flex flex-col absolute text-white border-0 border-b border-solid border-white`+ (showMenu ? ' ' : ' -top-52')}>
-            <Link className="px-4 py-2" to='/Home'>Home</Link>
-            <Link className="px-4 py-2" to='/About'>About</Link>
-            <Link className="px-4 py-2" to='/Research'>Research</Link>
+            <Link className="px-4 py-2" to='/home'>Home</Link>
+            <Link className="px-4 py-2" to='/research'>Research</Link>
+            <Link className="px-4 py-2" to='/about'>About</Link>
     </nav>
     </div>
   )
