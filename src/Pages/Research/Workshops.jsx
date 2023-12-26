@@ -29,7 +29,7 @@ const bootcamps = [
       Image:Mldevops,
       Venue: `Amrita Campus, Coimbatore`,
       Date: `20 & 21, April 2022`,
-      link:'/workshop/medicalai'
+      link:'/workshop/mldevops'
   },
 ]
 const Workshops = () => {
