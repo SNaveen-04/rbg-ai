@@ -90,7 +90,7 @@ const Results = () => {
           overall performance of the network and push it to a wider range of use
           cases.
         </p>
-        <div className="flex justify-between py-4">
+        <div className="flex flex-col lg:flex-row max-md:text-xs overflow-x-auto md:text-lg gap-4 md:justify-between py-4">
         <div>
             <h1 className="py-2 border-b-2 border-white">Table 1. Room detection comparison of SR method with original.</h1>
           <table border="1" className="gap-3 py-4">

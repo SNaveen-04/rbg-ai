@@ -24,7 +24,7 @@ export const research = [
   },
   {
     name: "Barathi Ganesh",
-    role: "Research Head at RBG.A",
+    role: "Research Head at RBG.AI",
     img: "https://i.ibb.co/WPkMzhL/Barathi-Ganesh.jpg",
   },
   {
@@ -202,3 +202,101 @@ export const cancellation=[
   },
 
 ];
+
+export const members=[
+  {
+    name:"Abishasri.S",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/808BSGn/abisha.jpg",
+  },
+  {
+    name:"Akashraja.M",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/McW7XZG/Akashraja.jpg",
+  },
+  {
+    name:"Anthony Vijay M",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/Njxq5Jb/Anthony.jpg",
+  },
+  {
+    name:"Dharani Sri M",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/Bqkznpz/Dharani1.jpg",
+  },
+  {
+    name:"Dhivya N",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/nkrz49k/Dhivya.jpg",
+  },
+  {
+    name:"Hariharan R",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/MS0C3Ck/Hariharan.jpg",
+  },
+  {
+    name:"Jayakrishnan R",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/Y3JRW5g/jay.jpg",
+  },
+  {
+    name:"Jayanth Mohan",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/C9W7Vs1/jayanth.jpg",
+  },
+  {
+    name:"Krishna Kousalya K",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/ZL4pKV5/Krishna.jpg",
+  },
+  {
+    name:"Lancy J",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/dpMGJmL/Lancy.jpg",
+  },
+  {
+    name:"Midharshana Reka KK",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/4Z6KprY/Midharshana1.jpg",
+  },
+  {
+    name:"Mohamed",
+    role:"IT Intern at RBG.AI",
+    img:"https://i.ibb.co/4Kj1Rvn/mohamed.jpg",
+  },
+  {
+    name:"Mugesh T",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/cycgbHh/Mugesh.jpg",
+  },
+  {
+    name:"Naveen S",
+    role:"IT Intern at RBG.AI",
+    img:"https://i.ibb.co/58XJh5T/naveen.jpg",
+  },
+  {
+    name:"Nithyashree M",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/9G3yCQ2/nithyashree.jpg",
+  },
+  {
+    name:"Rajesh M",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/GRwGYp0/Rajesh.jpg",
+  },
+  {
+    name:"Sanjana SM",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/yhbZ3wy/Sanjana2.jpg",
+  },
+  {
+    name:"Sruthi S",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/y6Qv2fd/sruthi.jpg",
+  },
+  {
+    name:"Thayaananthan K",
+    role:"AI Intern at RBG.AI",
+    img:"https://i.ibb.co/1dkyFjq/Thayaananthan.jpg",
+  },
+]
