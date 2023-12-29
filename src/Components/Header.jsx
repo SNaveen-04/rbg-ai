@@ -9,7 +9,7 @@ const Header = ({title,content}) => {
   return (
     <header className={` mb-2 font-OpenSans ${colour} max-w-screen h-[50%] flex flex-col items-center justify-center text-white p-6 text-center tracking-wide`}>
         <h1 className=" m-2 xl:my-6 text-3xl lg:text-3xl xl:text-4xl 2xl:text-5xl">{title}</h1>
-        <h2 className="m-2 xl:my-6 text-xs lg:text-sm xl:text-xl 2xl:text-4xl">{content}</h2>
+        <h2 className="m-2 xl:my-6 text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl">{content}</h2>
     </header>
   )
 }
