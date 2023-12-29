@@ -72,12 +72,10 @@ const CourseOverview = () => {
         <h1 className="text-xl md:text-2xl text-center">DURATION :<span className="inline px-1 text-xl"> 5 days</span></h1>
       <ul className="grid md:grid-cols-2">
         {Overview.map((Topics,index)=>{
-          {/* color = color==='text-slate-200'?'text-Red':'text-slate-200'
-          bg = bg==='bg-Red'?'bg-slate-200':'bg-Red' */}
           return (<li className='my-5 text-slate-100 bg-Red p-8 m-2 rounded' key={index}>
               <h3 className=" m-3 text-center text-slate-200 text-xl md:text-2xl">
               {Topics.title}</h3>
-              <ul className=" md:text-base text-xs">
+              <ul className="text-base md:text-lg">
                 {
                   Topics.topics.map((topic,key)=>{
                   return (

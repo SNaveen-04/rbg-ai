@@ -11,7 +11,7 @@ const Embed = () => {
           />
         </div>
           <p className="text-sm  text-pretty md:text-lg">
-            To learn more, check out <a className="text-gray-600 p-4" rel="noreferrer" target="_blank">our GitHub</a> and read <a className="text-gray-600 p-4" rel="noreferrer" target="_blank">our publication</a>
+            To learn more, check out <a className="text-gray-600 p-4" rel="noreferrer" target="_blank" href="https://github.com/rbg-research/Floor-Plan-Detection">our GitHub</a> and read <a className="text-gray-600 p-4" href="https://arxiv.org/abs/2112.09844v1" rel="noreferrer" target="_blank">our publication</a>
             presented at the 3rd International Conference on Machine Learning,
             Image Processing, Network Security and Data Sciences
           </p>

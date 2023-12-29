@@ -1,4 +1,3 @@
-import React from 'react'
 import Comone from './Comone'
 import Comtwo from './Comtwo'
 import Comthree from './Comthree'
