@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className={`${colour} md:mb-0 flex flex-col text-white`}>
         <div className="flex justify-between items-center py-2 px-6 border-0 border-b border-solid border-white">
             <Link to='/'>RBG AI Research</Link>
-            <button onClick={handleClick} className="border border-solid border-white p-1 rounded-sm hover:bg-slate-50 hover:text-[#76ad5f] md:hidden">Menu</button>
+            <button onClick={handleClick} className="border border-solid border-white p-1 rounded-sm hover:bg-slate-50 hover:text-black md:hidden">Menu</button>
             <nav className="hidden md:flex items-center justify-between">
             <Link className="p-3 relative" to='/home'>Home</Link>
             <Link className="p-3 relative" to='/research'>Research</Link>

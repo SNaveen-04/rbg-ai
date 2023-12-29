@@ -2,7 +2,7 @@ const Section1 = () => {
   return (
     
     <section className="p-8 bg-[#F9F9F9] max-md:p-2 max-w-screen rounded-lg text-Primary max-md:flex-col-reverse flex md:flex-row justify-between px-10 items-center">
-        <div className="max-md:p-2 p-4 tracking-wide w-2/3 flex flex-col gap-2 items-center justify-center max-md:text-sm max-w-2/3 md:text-xl">
+        <div className="max-md:p-2 p-4 tracking-wide flex flex-col gap-2 items-center justify-center max-md:text-sm md:max-w-2/3 md:text-xl">
             <h2 className="max-md:text-lg md:text-2xl font-semibold ">
             We have developed a deep learning model that helps to identify important geometrical features of the machine parts from 3D models and images.
             </h2>

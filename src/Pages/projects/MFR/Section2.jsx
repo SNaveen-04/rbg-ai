@@ -3,7 +3,7 @@ const Section = () => {
     
     <section className="max-md:p-2 max-md:py-2 md:p-8 max-w-screen rounded-lg text-Primary max-md:flex-col bg-slate-100 flex md:flex-row justify-between md:px-10 items-center">
           <img src='https://i.ibb.co/8r4PLqY/feature03-preview.png' className="p-4 text-sm max-md:h-40 md:w-1/3 max-md:w-40"/>
-          <div className="p-4 tracking-wide w-2/3 flex flex-col gap-2 items-center justify-center max-md:text-sm max-w-2/3 md:text-xl">
+          <div className="p-4 tracking-wide flex flex-col gap-2 items-center justify-center max-md:text-sm md:max-w-2/3 md:text-xl">
               <h2 className="max-md:text-lg md:text-2xl font-semibold ">
               3D CAD Models
               </h2>
