@@ -20,9 +20,9 @@ const Navbar = () => {
             <Link to='/'>RBG AI Research</Link>
             <button onClick={handleClick} className="border border-solid border-white p-1 rounded-sm hover:bg-slate-50 hover:text-black md:hidden">Menu</button>
             <nav className="hidden md:flex items-center justify-between">
-            <Link className="p-3 relative" to='/home'>Home</Link>
-            <Link className="p-3 relative" to='/research'>Research</Link>
-            <Link className="p-3 relative" to='/about'>About Us</Link>
+            <Link className="p-3 hover:text-yellow-300 relative" to='/home'>Home</Link>
+            <Link className="p-3 hover:text-yellow-300 relative" to='/research'>Research</Link>
+            <Link className="p-3 hover:text-yellow-300 relative" to='/about'>About Us</Link>
     </nav>
         </div>
     </nav>
@@ -31,7 +31,7 @@ const Navbar = () => {
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/research'>Research</Link>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/about'>About</Link>
     </nav> */}
-    <nav className={`${colour} w-2/3 min-h-screen flex flex-col absolute text-white border-0  border-r border-solid border-white transition-all duration-300 ease-in-out`+ (showMenu ? ' -left-0' : ' -left-full')}>
+    <nav className={`${colour} md:hidden w-2/3 min-h-screen flex flex-col absolute text-white border-0  border-r border-solid border-white transition-all duration-300 ease-in-out`+ (showMenu ? ' -left-0' : ' -left-full')}>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/home'>Home</Link>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/research'>Research</Link>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/about'>About</Link>
