@@ -1,6 +1,6 @@
 import { Link,useLocation } from "react-router-dom"
 import { useState } from "react"
-
+import { Squash as Hamburger } from 'hamburger-react'
 const Navbar = () => {
     const [showMenu,setShowMenu] =useState(false)
     const handleClick = () =>{
@@ -18,7 +18,9 @@ const Navbar = () => {
     <nav className={`${colour} md:mb-0 flex flex-col text-white`}>
         <div className="flex justify-between items-center py-2 px-6 border-0 border-b border-solid border-white">
             <Link to='/'>RBG AI Research</Link>
-            <button onClick={handleClick} className="border border-solid border-white p-1 rounded-sm hover:bg-slate-50 hover:text-black md:hidden">Menu</button>
+            <span className="md:hidden">
+            <Hamburger size={20} onToggle={handleClick}/>
+            </span>
             <nav className="hidden md:flex items-center justify-between">
             <Link className="p-3 hover:text-yellow-300 relative" to='/home'>Home</Link>
             <Link className="p-3 hover:text-yellow-300 relative" to='/research'>Research</Link>
