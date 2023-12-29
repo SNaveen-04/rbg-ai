@@ -14,7 +14,7 @@ const Navbar = () => {
     let colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-Red' : 'bg-Primary');
     colour = subpath === 'llm' ? 'bg-Primary' : colour;
   return (
-    <div className="top-0 sticky">
+    <div className="top-0 z-10 sticky">
     <nav className={`${colour} md:mb-0 flex flex-col text-white`}>
         <div className="flex justify-between items-center py-2 px-6 border-0 border-b border-solid border-white">
             <Link to='/'>RBG AI Research</Link>
@@ -26,12 +26,12 @@ const Navbar = () => {
     </nav>
         </div>
     </nav>
-    {/* <nav className={`md:hidden ${colour} w-full flex flex-col absolute text-white border-0  border-b-0 border-solid border-white`+ (showMenu ? ' ' : ' -top-52')}>
+    {/* <nav className={`md:hidden ${colour} w-full flex flex-col absolute text-white border-0  border-b-0 border-solid border-white`+ (showMenu ? ' ' : ' -top-full')}>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/home'>Home</Link>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/research'>Research</Link>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/about'>About</Link>
     </nav> */}
-    <nav className={`${colour} w-2/3 h-screen flex flex-col absolute text-white border-0  border-r border-solid border-white transition-all duration-300 ease-in-out`+ (showMenu ? ' -left-0' : ' -left-full')}>
+    <nav className={`${colour} w-2/3 min-h-screen flex flex-col absolute text-white border-0  border-r border-solid border-white transition-all duration-300 ease-in-out`+ (showMenu ? ' -left-0' : ' -left-full')}>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/home'>Home</Link>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/research'>Research</Link>
             <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/about'>About</Link>
