@@ -7,11 +7,11 @@ const Video = () => {
         <div className=" max-md:text-lg md:text-2xl text-Primary">
         <p>
         To learn more, check out 
-        <a className="text-gray-500">
+        <a className="text-gray-600 p-4" href="https://github.com/rbg-research/Machining-Feature-Retrieval" target="_blank" rel="noreferrer">
         our GitHub
         </a>
         and read 
-        <a className="text-gray-500">
+        <a className="text-gray-600 p-4" target="_blank" href="https://arxiv.org/abs/2108.11838v1" rel="noreferrer">
         our publication
         </a>
         submitted to 9th International Conference on Frontiers of Intelligent Computing: Theory and Applications (FICTA 2021)

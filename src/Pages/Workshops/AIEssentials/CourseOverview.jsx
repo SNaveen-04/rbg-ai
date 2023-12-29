@@ -64,26 +64,30 @@ topics:['Prerequisites :',
   ]
   }
 ]
-
 const CourseOverview = () => {
   return (
-    <div className="text-red-400 m-8 p-4">
-        <h1 className=" max-md:text-xl md:text-2xl underline">COURSE OVERVIEW</h1>
-        <p className="text-xl my-2">T - Theory,P - Practical,TP - Theory with Practical,D - Discussion</p>
-        <h1 className=" underline max-md:text-xl md:text-2xl inline">DURATION :</h1><p className="inline px-1 text-xl"> 5 days</p>
+    <div className="text-Red m-8 p-4">
+        <h1 className="text-xl md:text-4xl underline text-center">COURSE OVERVIEW</h1>
+        <p className="text-2xl my-2 text-center">T - Theory,P - Practical,TP - Theory with Practical,D - Discussion</p>
+        <h1 className="text-xl md:text-2xl text-center">DURATION :<span className="inline px-1 text-xl"> 5 days</span></h1>
+      <ul className="grid md:grid-cols-2">
         {Overview.map((Topics,index)=>{
-          return (<div className="my-5" key={index}>
-              <h3 className="text-red-400 m-3 text-center underline max-md:text-xl md:text-2xl">
+          {/* color = color==='text-slate-200'?'text-Red':'text-slate-200'
+          bg = bg==='bg-Red'?'bg-slate-200':'bg-Red' */}
+          return (<li className='my-5 text-slate-100 bg-Red p-8 m-2 rounded' key={index}>
+              <h3 className=" m-3 text-center text-slate-200 text-xl md:text-2xl">
               {Topics.title}</h3>
-              <ul className=" text-xl max-md:text-base">
-                {Topics.topics.map((topic,key)=>{
+              <ul className=" md:text-base text-xs">
+                {
+                  Topics.topics.map((topic,key)=>{
                   return (
-                    <li  className="text-gray-500" key={key}>{topic}</li>
+                    <li key={key}>{topic}</li>
                   )
                 })}
               </ul>
-            </div>)
+            </li>)
         })}
+      </ul>
     </div>
   )
 }

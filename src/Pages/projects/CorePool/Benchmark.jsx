@@ -33,7 +33,7 @@ const Benchmark = () => {
         <div className="p-8 text-2xl text-center">
         <p>
         To learn more, check out 
-        <a className="text-slate-400"> our GitHub </a>and read <a className="text-slate-400">our Benchmark </a> where you can find the fine tuned models applied for the different tasks and the observed results.
+        <a className="text-gray-600 p-4" href="https://github.com/rbg-research/CoRePooL" target="_blank" rel="noreferrer"> our GitHub </a>and read <a className="text-gray-600 p-4" target="_blank" href="https://github.com/rbg-research/CoRePooL/tree/main/benchmarks/badaga" rel="noreferrer">our Benchmark </a> where you can find the fine tuned models applied for the different tasks and the observed results.
         </p>
         </div>
     </div>

@@ -1,10 +1,10 @@
 export default function Expertise() {
   return (
-    <div className="w-full flex flex-col justify-center items-center min-h-[50vh]">
-      <h1 className="font-Poppins font-bold text-3xl mb-10 text-zinc-800">
+    <div className="flex text-Primary w-full font-OpenSans p-10 flex-col justify-center items-center min-h-[50vh]">
+      <h1 className="font-Poppins font-bold text-3xl text-center mb-10">
         Expert Talks from Academic & Industry: Elevating Your Understanding
       </h1>
-      <div className="flex flex-col text-zinc-800 font-medium text-lg">
+      <div className="flex flex-col font-medium text-lg">
         <span>How to accelerate your Business Model with Generative Al?</span>
         <span>Can Langchain be used in production?</span>
         <span>

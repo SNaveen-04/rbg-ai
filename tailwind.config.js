@@ -11,7 +11,8 @@ export default {
       colors:{
         Primary:'#6D9EEB',
         Secondary:'#EFF0FF',
-        Green:'#76ad5f'
+        Green:'#76ad5f',
+        Red:'#e57171'
       },
       fontFamily:{
         Poppins:'Poppins',

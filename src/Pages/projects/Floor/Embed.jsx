@@ -1,5 +1,3 @@
-import React from "react";
-
 const Embed = () => {
   return (
     <div>
@@ -13,7 +11,7 @@ const Embed = () => {
           />
         </div>
           <p className="text-sm  text-pretty md:text-lg">
-            To learn more, check out our GitHub and read our publication
+            To learn more, check out <a className="text-gray-600 p-4" rel="noreferrer" target="_blank">our GitHub</a> and read <a className="text-gray-600 p-4" rel="noreferrer" target="_blank">our publication</a>
             presented at the 3rd International Conference on Machine Learning,
             Image Processing, Network Security and Data Sciences
           </p>

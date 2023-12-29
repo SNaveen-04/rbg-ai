@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Comthree = () => {
   return (
     <div className='bg-slate-100' >
