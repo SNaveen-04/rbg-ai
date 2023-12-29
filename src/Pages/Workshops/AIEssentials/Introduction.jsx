@@ -7,7 +7,7 @@ const intros = [
 
 const Introduction = () => {
   return (
-    <ul className="m-0 p-8 text-xl max-md:text-base text-red-400 bg-slate-50">
+    <ul className="m-0 p-8 text-xl max-md:text-base text-Red bg-slate-100">
         {intros.map((intro,index)=>{
             return <li className="p-1 m-1" key={index}>{intro}</li>
         })}

@@ -9,14 +9,16 @@ const Navbar = () => {
     const location = useLocation()
     const paths = location.pathname.split('/');
     let currentpath = paths[1]
+    let subpath = paths[2]
     currentpath = currentpath.toLowerCase();
-    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-red-400' : 'bg-Primary');
+    let colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-Red' : 'bg-Primary');
+    colour = subpath === 'llm' ? 'bg-Primary' : colour;
   return (
     <div className="top-0 sticky">
     <nav className={`${colour} md:mb-0 flex flex-col text-white`}>
         <div className="flex justify-between items-center py-2 px-6 border-0 border-b border-solid border-white">
             <Link to='/'>RBG AI Research</Link>
-            <button onClick={handleClick} className="border border-solid border-white p-1 rounded-sm hover:bg-slate-50 hover:text-[#76ad5f] md:hidden">Menu</button>
+            <button onClick={handleClick} className="border border-solid border-white p-1 rounded-sm hover:bg-slate-50 hover:text-black md:hidden">Menu</button>
             <nav className="hidden md:flex items-center justify-between">
             <Link className="p-3 relative" to='/home'>Home</Link>
             <Link className="p-3 relative" to='/research'>Research</Link>
@@ -24,10 +26,10 @@ const Navbar = () => {
     </nav>
         </div>
     </nav>
-    <nav className={`md:hidden ${colour} w-full flex flex-col absolute text-white border-0  border-b border-solid border-white`+ (showMenu ? ' ' : ' -top-52')}>
-            <Link className="px-4 py-2" to='/home'>Home</Link>
-            <Link className="px-4 py-2" to='/research'>Research</Link>
-            <Link className="px-4 py-2" to='/about'>About</Link>
+    <nav className={`md:hidden ${colour} w-full flex flex-col absolute text-white border-0  border-b-0 border-solid border-white`+ (showMenu ? ' ' : ' -top-52')}>
+            <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/home'>Home</Link>
+            <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/research'>Research</Link>
+            <Link className="px-4 my-2 py-2 text-lg" onClick={handleClick} to='/about'>About</Link>
     </nav>
     </div>
   )

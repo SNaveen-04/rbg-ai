@@ -9,8 +9,10 @@ const Footer = () => {
   const location = useLocation()
     const paths = location.pathname.split('/');
     let currentpath = paths[1]
+    let subpath = paths[2]
     currentpath = currentpath.toLowerCase();
-    const colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-red-400' : 'bg-Primary');
+    let colour = currentpath === '' || currentpath === 'home' || currentpath === 'policy' ? `bg-Green` :(currentpath === 'workshop' || currentpath === 'about' ? 'bg-Red' : 'bg-Primary');
+    colour = subpath === 'llm' ? 'bg-Primary' : colour;
   return (
     <div className={`max-h-80  bottom-0 ${colour} `}>
       <div className={`${colour} items-center justify-center px-8  md:px-44 `}>
@@ -55,7 +57,7 @@ const Footer = () => {
         <div className="text-white pt-20 pb-2">
           <p className="text-center text-sm md:text-xl">
             © 2021 - 2023 Resilience Business Grids LLP. All rights reserved |
-            <Link to='/policy' className="hover:underline">Terms & Policies</Link>
+            <Link to='/policy' target="_blank" className="hover:underline">Terms & Policies</Link>
           </p>
         </div>
       </div>
