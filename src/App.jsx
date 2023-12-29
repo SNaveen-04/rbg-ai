@@ -25,7 +25,7 @@ function App() {
             <Route path='home' element={<Home/>}/>
             <Route path='about' element={<About/>}/>
             <Route path='research' element={<ResearchPage/>}/>
-            <Route path='policy' element={<Policy/>}/>
+            <Route path='policy'  element={<Policy/>}/>
             <Route path='projects' element={<Project/>}>
                 <Route path='mfr' element={<Mfr/>}/>
                 <Route path='corepool' element={<Corepool/>}/>

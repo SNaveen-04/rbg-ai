@@ -21,12 +21,12 @@ const Logos =[
 const Benchmark = () => {
   return (
     <div className="text-Primary">
-        <div className="m-10 flex max-md:flex-col md:flex-row gap-8 items-center justify-center">
+        <div className="m-10 flex max-md:flex-col md:flex-row gap-10 items-center justify-center">
             {Logos.map((logo,index)=>{
                 return (
                     <div key={index}>
                     <img src={logo.src} className="h-36"/>
-                    <span>{logo.title}</span>
+                    <span className="flex justify-center">{logo.title}</span>
                     </div>)
             })}
         </div>

@@ -35,10 +35,10 @@ const Footer = () => {
             </div>
             <div className=" flex mt-2 text-white justify-center cursor-pointer lg:mt-24 ">
               <a href="https://in.linkedin.com/company/rbgai" rel="noreferrer" target="_blank">
-                <FaLinkedin className="m-3 max-md:text-3xl md:text-4xl" />
+                <FaLinkedin className="m-3 max-md:text-3xl md:text-4xl " />
               </a>
               <a href="https://www.youtube.com/c/RBGAI" rel="noreferrer" target="_blank" >
-                <FaYoutube className="m-3 max-md:text-3xl md:text-4xl" />
+                <FaYoutube className="m-3 max-md:text-3xl md:text-4xl " />
               </a>
               <a href='https://m.facebook.com/p/RBGAI-100070859903620/?locale=en' rel="noreferrer" target="_blank" >
                 <FaFacebook className="m-3 max-md:text-3xl md:text-4xl" />

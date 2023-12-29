@@ -1,4 +1,4 @@
-import Header from "../../../Components/Header"
+import Header1 from "../Header1"
 import Benchmark from "./Benchmark"
 import Motivation from "./Motivation"
 import Section1 from "./Section1"
@@ -11,7 +11,7 @@ let Heading = {
 const Corepool = () => {
   return (
     <div className=" font-OpenSans">
-        <Header title={Heading.title} content={Heading.content}/>
+        <Header1 title={Heading.title} content={Heading.content}/>
         <Section1/>
         <Motivation/>
         <Table/>

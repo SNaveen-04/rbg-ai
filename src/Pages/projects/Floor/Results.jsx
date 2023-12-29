@@ -78,7 +78,7 @@ const Results = () => {
   return (
     <div className=" bg-Primary">
       <div className="text-left mx-auto px-3  text-white md:px-12 md:py-28">
-        <h1 className="text-2xl md:text-3xl">Results</h1>
+        <h1 className="text-2xl md:text-3xl pt-2">Results</h1>
         <p className="py-3">
           The multi-component module performed room detection with higher
           accuracy than that when using the CubiCasa5k model alone. The best
@@ -112,7 +112,6 @@ const Results = () => {
                     {Object.keys(data).map((rowName, rowIndex) => (
                       <div className="p-1" key={rowIndex}>
                         {data[rowName][colIndex]}
-                        {console.log(rowName, colIndex)}
                       </div>
                     ))}
                   </div>
@@ -142,7 +141,6 @@ const Results = () => {
                     {Object.keys(data1).map((rowName, rowIndex) => (
                       <div className="p-1" key={rowIndex}>
                         {data[rowName][colIndex]}
-                        {console.log(rowName, colIndex)}
                       </div>
                     ))}
                   </div>

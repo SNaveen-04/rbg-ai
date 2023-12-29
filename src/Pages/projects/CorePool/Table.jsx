@@ -10,7 +10,7 @@ const Table = () => {
     <div className="bg-Primary">
       <div className="text-white px-10 pt-16 pb-6">
         <h1 className="text-4xl">CoRe-PooL</h1>
-        <p className="text-lg my-2">
+        <p className="text-sm md:text-lg my-2">
           Since the Badaga language is not officially written in any native
           script, we have manually created 2100 Badaga transcripts written in
           English slang with their corresponding translation in English. 12
@@ -25,23 +25,23 @@ const Table = () => {
         </p>
       </div>
       <div>
-        <div className=" p-2 overflow-x-auto text-white ">
-          <div className="flex flex-col items-center text-xs md:text-sm">
-          <h1 className="p-4 text-xl text-center border-b border-blue-gray-100 bg-blue-gray-50 w-full">
+        <div className="p-2 overflow-x-auto   text-white ">
+          <div className="flex  flex-col items-center text-xs md:text-sm">
+          <h1 className="p-4 text-xl  border-b border-blue-gray-100 bg-blue-gray-50 ">
             Table 1. CoRe-PooL Statistics
           </h1>
-          <thead className="text-center my-3 py-3 items-baseline">
+          <thead className="text-center my-3 py-3 hidden md:block">
             <tr>
               <th></th>
-              <th className="text-center py-3 border-b border-blue-gray-100 bg-blue-gray-50 ">
+              <th className="text-center py-3 border-b border-blue-gray-100 bg-blue-gray-50 pr-52 ">
                 Number of transcript
               </th>
-              <th className="text-center py-3 p-4 border-b border-blue-gray-100 bg-blue-gray-50 pl-52">
+              <th className="text-center py-3 p-4 border-b border-blue-gray-100 bg-blue-gray-50 ">
                 Duration(seconds)
               </th>
             </tr>
           </thead>
-            <table className=" table-cell text-left">
+            <table className=" table-cell text-left max-w-full">
               <thead>
                 <tr>
                   <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
@@ -93,16 +93,16 @@ const Table = () => {
               </tbody>
             </table>
             <div className="py-4">
-            <h1 className="p-4 text-xl text-center border-b border-blue-gray-100 bg-blue-gray-50 w-full">
-            Table 2. Core-pool Variation
-          </h1>
-            <table className="table-auto">
+              <h1 className="p-4 text-xl text-center border-b border-blue-gray-100 bg-blue-gray-50 w-full">
+              Table 2. Core-pool Variation
+            </h1>
+            <table className="table-cell text-left">
               <thead>
                 <tr>
                 <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4 ">
                 Variation
                   </td>
-                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-44">
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-14 ">
                   </th>
                   <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
                   Total Audio Length(Minutes)
@@ -112,7 +112,7 @@ const Table = () => {
                 <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4 ">
                 Annotated
                   </td>
-                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-44">
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-14 ">
                   </th>
                   <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
                   420
@@ -122,7 +122,7 @@ const Table = () => {
                 <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4 ">
                 Unannotated
                   </td>
-                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-44">
+                  <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-14">
                   </th>
                   <td className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
                   968

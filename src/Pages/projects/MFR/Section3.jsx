@@ -4,7 +4,7 @@ const Section1 = () => {
       
       <section className="p-8 max-w-screen rounded-lg text-Primary max-md:flex-col-reverse flex md:flex-row justify-between px-10 items-center bg-[#F9F9F9]">
           <div className="p-4 tracking-wide w-2/3 flex flex-col gap-2 items-center justify-center max-md:text-sm max-w-2/3 md:text-xl">
-              <h2 className="max-md:text-lg md:text-2xl font-semibold ">
+              <h2 className="max-md:text-lg md:text-3xl  ">
               Machine feature Recognition uses inductive transfer learning.
               </h2>
               <p className="max-md:text-sm md:text-lg ">

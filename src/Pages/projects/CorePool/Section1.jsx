@@ -17,7 +17,7 @@ const Section1 = () => {
                         return <li className="my-5" key={index}>{value}</li>
                     })}
                 </ul>
-                <a href='https://github.com/rbg-research/CoRePooL/tree/main/benchmarks/badaga' className="border border-gray-500 p-3 max-md:p-1 rounded-2xl max-md:text-xs text-center bg-white text-gray-800">CORE AND PRETRAINED MODELS</a>
+                <a href='https://github.com/rbg-research/CoRePooL/tree/main/benchmarks/badaga' className= "text-black text-xs md:text-[17px] w-auto border border-slate-300 p-3 tracking-widest rounded-3xl hover:bg-slate-200 duration-150 outline-none uppercase" target="blank">CORE AND PRETRAINED MODELS</a>
             </div>
         </section>
       )
