@@ -25,8 +25,8 @@ const Benchmark = () => {
             {Logos.map((logo,index)=>{
                 return (
                     <div key={index}>
-                    <img src={logo.src} className="h-36"/>
-                    <span className="flex justify-center">{logo.title}</span>
+                    <img src={logo.src} className="h-28"/>
+                    <span className="flex text-lg justify-center">{logo.title}</span>
                     </div>)
             })}
         </div>
