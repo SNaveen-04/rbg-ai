@@ -1,9 +1,9 @@
 import { Carousel } from "flowbite-react";
 const Slider = () => {
   return (
-      <div className="h-56 bg-white  sm:h-64 xl:h-80 2xl:h-96 p-3">
-        <Carousel leftControl=" " rightControl=" " slideInterval={3000}>
-          <div className="flex h-full items-center   justify-center md:text-3xl text-Green text-center">
+      <div className="h-56 z-30 bg-white  sm:h-64 xl:h-80 2xl:h-96 p-3">
+        <Carousel leftControl=" " rightControl=" " slideInterval={3000} >
+          <div className="flex h-full items-center p-24  justify-center md:text-3xl text-Green text-center">
             Delivering Human-Machine Loop for Accelerating Data-Driven Machine
             Learning Workflows.
           </div>
