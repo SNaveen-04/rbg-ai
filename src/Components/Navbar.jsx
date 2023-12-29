@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-2 px-6 border-0 border-b border-solid border-white">
             <Link to='/'>RBG AI Research</Link>
             <span className="md:hidden">
-            <Hamburger size={20} onToggle={handleClick}/>
+            <Hamburger size={20} toggled={showMenu} toggle={setShowMenu} />
             </span>
             <nav className="hidden md:flex items-center justify-between">
             <Link className="p-3 hover:text-yellow-300 relative" to='/home'>Home</Link>
