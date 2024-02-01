@@ -25,7 +25,7 @@ const Navbar = () => {
             <Link className="p-3 hover:text-yellow-300 relative" to='/home'>Home</Link>
             <Link className="p-3 hover:text-yellow-300 relative" to='/research'>Research</Link>
             <Link className="p-3 hover:text-yellow-300 relative" to='/about'>About Us</Link>
-    </nav>
+            </nav>
         </div>
     </nav>
     {/* <nav className={`md:hidden ${colour} w-full flex flex-col absolute text-white border-0  border-b-0 border-solid border-white`+ (showMenu ? ' ' : ' -top-full')}>
